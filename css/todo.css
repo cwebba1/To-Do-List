@@ -1,0 +1,11 @@
+/*todo.css*/
+body {
+	margin: 1em auto;
+	padding:0 1em;
+}
+/* {list-style:none;
+}*/
+.done-true {
+	text-decoration: line-through;
+	color:grey;
+}

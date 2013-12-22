@@ -1,0 +1,49 @@
+112413 Angular Tutorial CX
+First Example:
+<body>
+	<div ng-controller="TodoCtrl">
+		<h2>Total To-Dos: {{totalTodos}}</h2>
+		<ul class="unstyled"> </ul>
+			<li ng-repeat="todo in todos">
+				{{todo.text}}
+			</li>
+	</div>
+</body>
+
+Removed and replaced:
+{{todo.text}}
+
+With:
+
+<body>
+	<div ng-controller="TodoCtrl">
+		<h2>Total To-Dos: {{totalTodos}}</h2>
+		<ul class="list-unstyled"> </ul>
+			<li ng-repeat="todo in todos">
+				<input type="checkbox" ng-model="todo.done">
+				<span class="done-{{todo.done}}">{{todo.text}}</span>
+			</li>
+	</div>
+</body>
+
+
+
+
+2nd Removed and replaced:
+
+{{formTodoText}}
+
+With:
+<button class="btn"><i class="icon-plus"></i> Add</button>
+
+
+
+JS:
+OUT:
+	$scope.totalTodos = 4;
+
+IN:
+
+
+
+			<button class="button-red">Red Button </button>
